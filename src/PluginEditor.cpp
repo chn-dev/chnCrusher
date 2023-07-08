@@ -24,7 +24,7 @@ PluginEditor::PluginEditor( PluginProcessor& p )
    m_pSlQuantize->setSliderStyle( juce::Slider::LinearVertical );
    m_pSlQuantize->setSliderSnapsToMousePosition( false );
    m_pSlQuantize->addListener( this );
-   m_pSlQuantize->setSkewFactor( 0.25, false );
+   m_pSlQuantize->setSkewFactor( 0.5, false );
    addAndMakeVisible( m_pSlQuantize );
 
    m_pLaQuantize = new juce::Label( "Quantize" );
