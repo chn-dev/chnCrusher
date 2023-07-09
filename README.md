@@ -41,7 +41,7 @@ That's simple enough for cases where the sample ratio's inverse is a whole numbe
 
 In contrast, a resampling frequency of 17640Hz results in a sample ratio of 17640Hz / 44100Hz = 0.4 - or its inverse 1 / sampleRatio = 2.5.
 
-Because we're in discrete time, we can't update the output buffer's value precisely every 2.5 samples, so we have to update it at varying discrete steps. In this example, we update it at sample numbers #0, #3, #5, #8, #10, #13, and so on. We make steps of 3, 2, 2, 3, 2, 3, .. samples between updates of the output value so that the average step size is 2.5 samples.
+Because we're in discrete time, we can't update the output buffer's value precisely every 2.5 samples, so we have to update it at varying discrete steps. In this example, we update it at sample numbers #0, #3, #5, #8, #10, #13, and so on. We make steps of 3, 2, 3, 2, 3, .. samples between updates of the output value so that the average step size is 2.5 samples.
 
 x[n] is the input buffer and y[n] the output buffer:
 
