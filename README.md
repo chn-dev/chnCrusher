@@ -12,7 +12,7 @@ It doesn't get any simpler than that! :-)
   
 To clone and compile chnCrusher, do the following:
 
-    git clone ssh://github.com/chn-dev/chnCrusher
+    git clone https://github.com/chn-dev/chnCrusher
     cd chnCrusher
     git submodule update --init --recursive
     cmake . -B build
