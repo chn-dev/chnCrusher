@@ -18,6 +18,16 @@ To clone and compile chnCrusher, do the following:
     cmake . -B build
     cmake --build build
 
+When using the Visual Studio Compiler under Windows you can use either
+
+    cmake --build build --config Debug
+    
+or
+
+    cmake --build build --config Release
+    
+to to build in debug or release mode.
+
 By default, the plugin will be built in the formats LV2, VST3, AU and as a standalone application. chnCrusher uses JUCE as a submodule, so the third command above will clone [JUCE v7.0.5](https://github.com/juce-framework/JUCE/tree/69795dc8e589a9eb5df251b6dd994859bf7b3fab) under the subdirectory "JUCE".
 
 The guts of the plugin's work is done in PluginProcessor::processBlock().
